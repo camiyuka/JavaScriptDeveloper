@@ -16,8 +16,8 @@ imprima no console o valor que será gasto para realizar essa viagem
 const precoGasolina= 6.50;
 const precoEtanol=5.50;
 const KmPorLitro= 18.3;
-const distanciaEmKm=200;
-const tipoCombustivel= 'etanol';
+const distanciaEmKm=500;
+const tipoCombustivel= 'lalala';
 
 const litrosConsumidos= distanciaEmKm/ KmPorLitro;
 
