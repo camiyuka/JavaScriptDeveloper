@@ -33,8 +33,6 @@ function main(){
     console.log('executando a função main, que é a principal a ser utilizada no código');
     console.log('chama-se todas as funções utilizadas no código aqui, para ficar mais limpo');
     sayMyName('Cami');
-    quadrado(10);
-    calcularJuros(100,20);
     
 }
 
