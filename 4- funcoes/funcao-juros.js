@@ -12,16 +12,23 @@ Código Condição de pagamento:
 
 */
 
+function aplicarDesconto(valor, desconto){
+    return(valor- (valor* (desconto/ 100)));
+}
+
+function aplicarJuros(valor, juros){
+    return(valor+(valor* (juros/100)));
+}
+
 const precoDoProduto= 500;
 const condicaoDePagamento=5;
 
 if(condicaoDePagamento===1){
-    console.log(precoDoProduto-(precoDoProduto*0.1));
+    console.log(aplicarDesconto(precoDoProduto, 10));
 } else if (condicaoDePagamento===2){
-    console.log(precoDoProduto-(precoDoProduto*0.15));
+    console.log(aplicarDesconto(precoDoProduto, 15));
 } else if (condicaoDePagamento===3){
     console.log(precoDoProduto);
 } else{
-    console.log(precoDoProduto+(precoDoProduto*0.1));
+    console.log(aplicarJuros((precoDoProduto, 10)));
 }
-
