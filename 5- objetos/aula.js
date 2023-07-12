@@ -1,13 +1,59 @@
 
-//um objeto js é uma coleção dinâmica de chave e valor
-const pessoa={
-    nome: "Camila Yukari Yatabe",
-    idade: 19,
-    descrever: function(){
-        console.log(`meu nome é ${this.nome} e eu tenho ${this.idade} anos`)    
-    }
-};
 
+class Pessoa {
+    nome ; 
+    idade ;
+    anoDeNascimento;
+
+    constructor(nome, idade){
+        this.nome= nome;
+        this.idade= idade;
+        this.anoDeNascimento= 2023 - idade;
+    }
+
+    descrever() {
+        console.log(`meu nome é ${this.nome} e eu tenho ${this.idade} anos`);
+    }
+}
+
+function compararPessoas(p1, p2){
+    if (p1.idade > p2.idade) {
+        console.log(`${p1.nome} é mais velho(a) que ${p2.nome}`);
+    } else if (p2.idade > p1.idade){
+        console.log(`${p2.nome} é mais velho(a) que ${p1.nome}`);
+    } else {
+        console.log(`${p2.nome} tem a mesma idade que ${p1.nome}`);
+    }
+}
+
+        const camila= new Pessoa('Camila', 19);
+        const carol= new Pessoa('Carolina', 20);
+        const mirian= new Pessoa('Mirian', 52);
+        const henrique= new Pessoa('Henrique', 13);
+        const yoshiaki= new Pessoa('Yoshiaki', 49);
+
+        compararPessoas(yoshiaki, mirian);
+        compararPessoas(henrique, carol);
+        compararPessoas(camila, yoshiaki);
+
+/*
+const camila= new Pessoa();
+camila.nome= 'Camila Yukari Yatabe';
+camila.idade= 19;
+
+const henrique= new Pessoa();
+henrique.nome='Henrique Kenji Yatabe';
+henrique.idade=13;
+
+console.log(camila);
+console.log(henrique);
+
+
+
+const camila{
+    nome= 'camila';
+    idade=19; 
+}
 const atributo= 'idade';
 
 console.log(pessoa[atributo]);
@@ -19,8 +65,6 @@ pessoa['nome'] = 'teste';
 pessoa.nome= 'teste';
 
 
-
-/*
 console.log(camila.nome);
 console.log(camila.idade);
 console.log(camila);
@@ -28,5 +72,7 @@ console.log(camila);
 // de certa forma atualizou o objeto
 camila.altura= 1.59;
 console.log(camila);
+//um objeto js é uma coleção dinâmica de chave e valor
 
 */
+
