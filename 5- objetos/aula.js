@@ -1,4 +1,5 @@
-
+// exemplo:
+// objeto é uma coleção de dados, com chave e valor
 
 class Pessoa {
     nome ; 
@@ -11,7 +12,7 @@ class Pessoa {
         this.anoDeNascimento= 2023 - idade;
     }
 
-    descrever() {
+    descrever() { //this refere-se ao próprio objeto
         console.log(`meu nome é ${this.nome} e eu tenho ${this.idade} anos`);
     }
 }
@@ -25,6 +26,7 @@ function compararPessoas(p1, p2){
         console.log(`${p2.nome} tem a mesma idade que ${p1.nome}`);
     }
 }
+//instância de objeto
 
         const camila= new Pessoa('Camila', 19);
         const carol= new Pessoa('Carolina', 20);
@@ -37,6 +39,7 @@ function compararPessoas(p1, p2){
         compararPessoas(camila, yoshiaki);
 
 /*
+
 const camila= new Pessoa();
 camila.nome= 'Camila Yukari Yatabe';
 camila.idade= 19;
@@ -48,8 +51,7 @@ henrique.idade=13;
 console.log(camila);
 console.log(henrique);
 
-
-
+objeto camila 
 const camila{
     nome= 'camila';
     idade=19; 
@@ -59,11 +61,10 @@ const atributo= 'idade';
 console.log(pessoa[atributo]);
 console.log(pessoa['nome']);
 
-//dinâmico- pode ser recebido como parâmetro por exemplo
+//acesso dinâmico- pode ser recebido como parâmetro por exemplo
 pessoa['nome'] = 'teste';
 //acesso direto
 pessoa.nome= 'teste';
-
 
 console.log(camila.nome);
 console.log(camila.idade);
