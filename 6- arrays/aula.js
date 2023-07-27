@@ -23,11 +23,11 @@ teste.push('estudando javascript');
 teste.push(978302);
 console.log(teste);
 
-//remove o ÚLTIMO item adicionado
+//.pop remove o ÚLTIMO item adicionado
 console.log(teste.pop());
 console.log(teste);
 
-//remove o PRIMEIRO item adicionado
+//.shift remove o PRIMEIRO item adicionado
 console.log(teste.shift());
 console.log(teste);
 
