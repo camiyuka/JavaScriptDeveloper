@@ -42,20 +42,3 @@ notas.push(5);
 
 const soma= notas[0] + notas[1] + notas[2] + notas[3] + notas[4];
 //console.log(soma /5);
-
-
-//estrutura for 
-
-for (let i = 0; i < 10; i++) {
-    console.log(i);
-}
-
-//for em strings 
-const nome= 'Camila Yukari Yatabe';
-
-for (let i = 0; i < nome.length; i++) {
-    const letra= nome[i];
-    console.log(letra);
-}
-
-
