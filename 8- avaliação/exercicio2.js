@@ -18,18 +18,21 @@
 const { gets, print} = require ('./funcoes-aux2');
 
 const n= gets();
-let maiorNumero= 0
+let maiorNumeroPar= null;
+let menorNumeroImpar= null;
 
-for (let i = 0; i < n.length; i++) {
-     maiorNumero = numero> numeros;
-    
-}
+for (let i = 0; i < n; i++) {
+    let numero = gets();
+    if(numero % 2 === null || numero > maiorNumeroPar){
+        maiorNumeroPar= numero;
+    } else{ 
+        if(menorNumeroImpar === null || numero < menorNumeroImpar ){
+            menorNumeroImpar= numero;
+        }else{
+            
+        }
+            }
+                            }
 
-for (let i = 0; i < n.length; i++) {
-    const numero = gets();
-    if(numero % 2 ===0 && numero == maiorNumero){
-        print('maior numero par')
-    } else{
-        
-    }
-}
+print('o menor número ímpar é: ' + menorNumeroImpar);
+print('o maior número par é: ' + maiorNumeroPar);
